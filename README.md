@@ -41,6 +41,16 @@ running):
     HUBOT_KANDAN_HOST=443
     HUBOT_KANDAN_PROTOCOL=https
 
+You probably also want Hubot to ignore messages from itself (since some
+hubot-scripts don't require invocation that starts with "hubot"). You
+may add this environment variable to ignore the user with username
+`hubot`:
+
+    HUBOT_KANDAN_IGNORED_USERS=hubot
+
+If you want Hubot to ignore multiple users, you may include multiple
+usernames, comma-separated (e.g. `hubot,admin`).
+
 Other cloud providers
 =====================
 Installation instructions for other cloud providers are readily accepted, but be sure keep them as close to copy/paste as possible.
